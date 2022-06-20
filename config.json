@@ -1,0 +1,50 @@
+{
+	"FLIPSIDE": {
+		"ETH": {
+			"DAILY": {
+				"30": "https://node-api.flipsidecrypto.com/api/v2/queries/b62e61c6-e73f-4c9d-9494-729b9fbaea92/data/latest",
+				"90": "https://node-api.flipsidecrypto.com/api/v2/queries/78bdd8aa-5d2d-4387-9d1c-9ac5c80ebbe8/data/latest",
+				"180": "https://node-api.flipsidecrypto.com/api/v2/queries/821c78d0-2605-407e-ab62-a62de6569e73/data/latest",
+				"365": "https://node-api.flipsidecrypto.com/api/v2/queries/bbafd17d-769b-4008-b0cd-cc03fdad92a6/data/latest",
+				"ALL": "https://node-api.flipsidecrypto.com/api/v2/queries/28b7caa7-cf3e-46d7-9db2-d6b55dacfcae/data/latest"
+			},
+			"WEEKLY": {
+				"30": "https://node-api.flipsidecrypto.com/api/v2/queries/9d1021b3-3c34-411f-a043-5689d2eb8338/data/latest",
+				"90": "https://node-api.flipsidecrypto.com/api/v2/queries/0ba450d0-7daf-4e51-8670-ec5fb1ad8813/data/latest",
+				"180": "https://node-api.flipsidecrypto.com/api/v2/queries/437cc3d7-1865-4fb4-9201-b171575bc3df/data/latest",
+				"365": "https://node-api.flipsidecrypto.com/api/v2/queries/87d58d7b-a906-48a4-bf8c-783f85a7aa59/data/latest",
+				"ALL": "https://node-api.flipsidecrypto.com/api/v2/queries/dba1c59a-75d7-4804-b086-8c7d5e0097c4/data/latest"
+			},
+			"MONTHLY": {
+				"30": "https://node-api.flipsidecrypto.com/api/v2/queries/01e15ccc-6aa8-4d74-8d9b-bf35f2a489e5/data/latest",
+				"90": "https://node-api.flipsidecrypto.com/api/v2/queries/f5db4c99-d0bd-4f07-ae7c-db52d808f51c/data/latest",
+				"180": "https://node-api.flipsidecrypto.com/api/v2/queries/ec45cc33-829b-4b02-9ebd-018ec221c925/data/latest",
+				"365": "https://node-api.flipsidecrypto.com/api/v2/queries/bed3f439-ca12-48af-ad9c-1070b8b09f6f/data/latest",
+				"ALL": "https://node-api.flipsidecrypto.com/api/v2/queries/b0b8326d-78b7-44ed-b2be-95b9be0b99a4/data/latest"
+			}
+		},
+		"MATIC": {
+			"DAILY": {
+				"30": "https://node-api.flipsidecrypto.com/api/v2/queries/8d3fa5c7-e197-4a4b-8038-c2ab09424f42/data/latest",
+				"90": "https://node-api.flipsidecrypto.com/api/v2/queries/feec61b9-f162-4f0d-8fe3-f1587df50598/data/latest",
+				"180": "https://node-api.flipsidecrypto.com/api/v2/queries/d05f5560-bf1d-407d-bc46-2a57d7076a76/data/latest",
+				"365": "https://node-api.flipsidecrypto.com/api/v2/queries/44f1ba8f-398f-43c9-a4a4-114cd59e2253/data/latest",
+				"ALL": "https://node-api.flipsidecrypto.com/api/v2/queries/7de06a4c-5d20-458c-a193-457887c242f5/data/latest"
+			},
+			"WEEKLY": {
+				"30": "https://node-api.flipsidecrypto.com/api/v2/queries/9046aa87-2155-4403-a7bf-fc6869eec90a/data/latest",
+				"90": "https://node-api.flipsidecrypto.com/api/v2/queries/623da7b6-a43d-491d-8c56-bd8c02934079/data/latest",
+				"180": "https://node-api.flipsidecrypto.com/api/v2/queries/b08d3b12-509a-4ba5-a2d6-c8e0a2ab871f/data/latest",
+				"365": "https://node-api.flipsidecrypto.com/api/v2/queries/c8824a3f-f058-42e4-af44-b0e07eefdef4/data/latest",
+				"ALL": "https://node-api.flipsidecrypto.com/api/v2/queries/43268b4c-101d-490b-afeb-1ca5b73d0b10/data/latest"
+			},
+			"MONTHLY": {
+				"30": "https://node-api.flipsidecrypto.com/api/v2/queries/73b0759c-4170-4b19-bbe3-bc8db99d5d77/data/latest",
+				"90": "https://node-api.flipsidecrypto.com/api/v2/queries/b316a3c0-d2c8-47fa-af96-247774567054/data/latest",
+				"180": "https://node-api.flipsidecrypto.com/api/v2/queries/f4986a38-55b4-4f86-bdcb-704e2478826f/data/latest",
+				"365": "https://node-api.flipsidecrypto.com/api/v2/queries/904feda8-15e7-4e1b-8ab5-9de1b79d7b05/data/latest",
+				"ALL": "https://node-api.flipsidecrypto.com/api/v2/queries/999f8115-582e-4b9c-b35a-531ba39273a9/data/latest"
+			}
+		}
+	}
+}
