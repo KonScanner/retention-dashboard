@@ -1,5 +1,3 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/konscanner/maker-dao/badge)](https://www.codefactor.io/repository/github/konscanner/maker-daoa)
+[![CodeFactor](https://www.codefactor.io/repository/github/konscanner/retention-dashboard/badge)](https://www.codefactor.io/repository/github/konscanner/retention-dashboard)
 
-# Maker Dao
-
-Maker Dao - DAI on the market
+# Retention Dashboard
