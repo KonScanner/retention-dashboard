@@ -123,3 +123,31 @@ hide_streamlit_style = """
             footer {visibility: hidden;}
             </style>
             """
+
+
+def plot_bar(option4: str, data: pd.DataFrame):
+    if option4 == "Grouped":
+        return px.bar(
+            data,
+            x="Date",
+            y=["Old", "New"],
+            title="Wide-Form Input",
+            pattern_shape_sequence=[
+                "+",
+            ],
+            barmode="group",
+        )
+
+    elif option4 == "Stacked":
+        return px.bar(
+            data,
+            x="Date",
+            y=["Old", "New"],
+            title="Wide-Form Input",
+            pattern_shape_sequence=[
+                "+",
+            ],
+        )
+
+    else:
+        return px.line(data, x="Date", y="Portion")

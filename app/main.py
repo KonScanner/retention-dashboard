@@ -1,5 +1,5 @@
 import streamlit as st
-from utils.utils import get_data, hide_streamlit_style, option_handle
+from utils.utils import get_data, hide_streamlit_style, option_handle, plot_bar
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
@@ -30,10 +30,10 @@ st.markdown(
 )
 
 
-option = st.selectbox("View:", ("daily", "weekly", "monthly"), index=1)
-option2 = st.selectbox("Network:", ("Ethereum", "Polygon"), index=0)
-
+option = st.sidebar.selectbox("View:", ("daily", "weekly", "monthly"), index=1)
+option2 = st.sidebar.selectbox("Network:", ("Ethereum", "Polygon"), index=0)
 option3 = option_handle(option=option2)
+option4 = st.sidebar.selectbox("Type", ("Stacked", "Grouped", "Proportion"), index=0)
 
 
 @st.cache(suppress_st_warning=True)
@@ -49,17 +49,7 @@ def load_data():
 fig_cols = st.columns(2)
 with fig_cols[0]:
     # st.markdown("### Second Chart Title")
-    fig = go.Figure()
-    fig = px.bar(
-        data_30,
-        x="Date",
-        y=["Old", "New"],
-        title="Wide-Form Input",
-        pattern_shape_sequence=[
-            "+",
-        ],
-    )
-
+    fig = plot_bar(data=data_30, option4=option4)
     fig.update_layout(
         title_text=f"User Retention {option2.capitalize()} | Last 30 days | {option.capitalize()}"
     )
@@ -69,15 +59,7 @@ with fig_cols[0]:
     st.write(fig)
 
 with fig_cols[1]:
-    fig = px.bar(
-        data_90,
-        x="Date",
-        y=["Old", "New"],
-        title="Wide-Form Input",
-        pattern_shape_sequence=[
-            "+",
-        ],
-    )
+    fig = plot_bar(data=data_90, option4=option4)
     fig.update_layout(
         title_text=f"User Retention {option2.capitalize()} | Last 90 days | {option.capitalize()}"
     )
@@ -96,16 +78,7 @@ st.markdown(
 fig_cols2 = st.columns(2)
 with fig_cols2[0]:
     # st.markdown("### Second Chart Title")
-    fig = go.Figure()
-    fig = px.bar(
-        data_180,
-        x="Date",
-        y=["Old", "New"],
-        title="Wide-Form Input",
-        pattern_shape_sequence=[
-            "+",
-        ],
-    )
+    fig = plot_bar(data=data_180, option4=option4)
     fig.update_layout(
         title_text=f"User Retention {option2.capitalize()} | Last 180 days | {option.capitalize()}"
     )
@@ -115,15 +88,7 @@ with fig_cols2[0]:
     st.write(fig)
 
 with fig_cols2[1]:
-    fig = px.bar(
-        data_365,
-        x="Date",
-        y=["Old", "New"],
-        title="Wide-Form Input",
-        pattern_shape_sequence=[
-            "+",
-        ],
-    )
+    fig = plot_bar(data=data_365, option4=option4)
 
     fig.update_layout(
         title_text=f"User Retention {option2.capitalize()} | Last 365 days | {option.capitalize()}"
@@ -139,22 +104,13 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-fig = go.Figure()
-fig = px.bar(
-    data_all,
-    x="Date",
-    y=["Old", "New"],
-    title="Wide-Form Input",
-    pattern_shape_sequence=[
-        "+",
-    ],
-)
+fig = plot_bar(data=data_all, option4=option4)
 fig.update_layout(
     title_text=f"User Retention {option2.capitalize()} | All-Time | {option.capitalize()}"
 )
 fig.update_xaxes(title_text="Date")
 fig.update_yaxes(title_text="Count")
-fig.update_layout(autosize=True, width=1750, height=800)
+fig.update_layout(autosize=True, width=1500, height=800)
 st.write(fig)
 # st.markdown(
 #     """
